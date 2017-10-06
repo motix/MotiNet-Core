@@ -17,13 +17,13 @@ deploy:
   name: development
   server: https://www.myget.org/F/motix-ci/api/v2/package
   api_key:
-    secure: ae318224-e159-4856-9e08-4a47a58c1aaf
+    secure: YDxm2UCa6DcR4A6lbRJ3/6wbYD0AvAea2YcmMxJzsr2yNLQcIru79Ix8hNqwSELQ
   skip_symbols: true
   on:
     branch: master
 - provider: NuGet
   name: production
   api_key:
-    secure: 338d0ec7-b0fe-4a72-a2b4-43182be3b8c2
+    secure: yoKwSyWIlADOZJTzlb7Rb4yCex1zIEWgMzoaFhQ3MnJDCPwcNv3/KTMWIVr5C63G
   on:
     appveyor_repo_tag: true
