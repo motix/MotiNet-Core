@@ -1,0 +1,29 @@
+version: '{build}'
+pull_requests:
+  do_not_increment_build_number: true
+branches:
+  only:
+  - master
+nuget:
+  disable_publish_on_pr: true
+build_script:
+- ps: .\Build.ps1
+test: off
+artifacts:
+- path: .\artifacts\**\*.nupkg
+  name: NuGet
+deploy:
+- provider: NuGet
+  name: development
+  server: https://www.myget.org/F/motix-ci/api/v2/package
+  api_key:
+    secure: ae318224-e159-4856-9e08-4a47a58c1aaf
+  skip_symbols: true
+  on:
+    branch: master
+- provider: NuGet
+  name: production
+  api_key:
+    secure: 338d0ec7-b0fe-4a72-a2b4-43182be3b8c2
+  on:
+    appveyor_repo_tag: true

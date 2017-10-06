@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RootNamespace>MotiNet</RootNamespace>
+    <AssemblyName>Motix.Extensions.MotiNetCore</AssemblyName>
+    <AssemblyTitle>Motix.Extensions.MotiNetCore</AssemblyTitle>
+    <Authors>Minh Nguyen</Authors>
+    <Copyright>Motix</Copyright>
+    <Description>Motix.Extensions.MotiNetCore class library</Description>
+    <PackageId>Motix.Extensions.MotiNetCore</PackageId>
+    <PackageProjectUrl>https://github.com/motix/MotiNet-Core</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/motix/MotiNet-Core/blob/master/LICENSE</PackageLicenseUrl>
+    <VersionPrefix>2.0.0</VersionPrefix>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
