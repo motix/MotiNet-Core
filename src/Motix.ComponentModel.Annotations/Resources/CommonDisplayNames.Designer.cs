@@ -22,7 +22,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class CommonDisplayNames {
+    public class CommonDisplayNames {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("System.ComponentModel.DataAnnotations.Resources.CommonDisplayNames", typeof(CommonDisplayNames).Assembly);
@@ -51,7 +51,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Active.
         /// </summary>
-        internal static string Active {
+        public static string Active {
             get {
                 return ResourceManager.GetString("Active", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Categories.
         /// </summary>
-        internal static string Categories {
+        public static string Categories {
             get {
                 return ResourceManager.GetString("Categories", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Content.
         /// </summary>
-        internal static string Content {
+        public static string Content {
             get {
                 return ResourceManager.GetString("Content", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Date.
         /// </summary>
-        internal static string Date {
+        public static string Date {
             get {
                 return ResourceManager.GetString("Date", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Description Meta.
         /// </summary>
-        internal static string DescriptionMeta {
+        public static string DescriptionMeta {
             get {
                 return ResourceManager.GetString("DescriptionMeta", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Email.
         /// </summary>
-        internal static string Email {
+        public static string Email {
             get {
                 return ResourceManager.GetString("Email", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Filters.
         /// </summary>
-        internal static string Filters {
+        public static string Filters {
             get {
                 return ResourceManager.GetString("Filters", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Full Name.
         /// </summary>
-        internal static string FullName {
+        public static string FullName {
             get {
                 return ResourceManager.GetString("FullName", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Keywords Meta.
         /// </summary>
-        internal static string KeywordsMeta {
+        public static string KeywordsMeta {
             get {
                 return ResourceManager.GetString("KeywordsMeta", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Message.
         /// </summary>
-        internal static string Message {
+        public static string Message {
             get {
                 return ResourceManager.GetString("Message", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Name.
         /// </summary>
-        internal static string Name {
+        public static string Name {
             get {
                 return ResourceManager.GetString("Name", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Nationality.
         /// </summary>
-        internal static string Nationality {
+        public static string Nationality {
             get {
                 return ResourceManager.GetString("Nationality", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Notes.
         /// </summary>
-        internal static string Notes {
+        public static string Notes {
             get {
                 return ResourceManager.GetString("Notes", resourceCulture);
             }
@@ -180,7 +180,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Overview.
         /// </summary>
-        internal static string Overview {
+        public static string Overview {
             get {
                 return ResourceManager.GetString("Overview", resourceCulture);
             }
@@ -189,7 +189,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Phone Number.
         /// </summary>
-        internal static string PhoneNumber {
+        public static string PhoneNumber {
             get {
                 return ResourceManager.GetString("PhoneNumber", resourceCulture);
             }
@@ -198,7 +198,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Position.
         /// </summary>
-        internal static string Position {
+        public static string Position {
             get {
                 return ResourceManager.GetString("Position", resourceCulture);
             }
@@ -207,7 +207,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Priority.
         /// </summary>
-        internal static string Priority {
+        public static string Priority {
             get {
                 return ResourceManager.GetString("Priority", resourceCulture);
             }
@@ -216,7 +216,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Reviews.
         /// </summary>
-        internal static string Reviews {
+        public static string Reviews {
             get {
                 return ResourceManager.GetString("Reviews", resourceCulture);
             }
@@ -225,7 +225,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Tags.
         /// </summary>
-        internal static string Tags {
+        public static string Tags {
             get {
                 return ResourceManager.GetString("Tags", resourceCulture);
             }
@@ -234,7 +234,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Title.
         /// </summary>
-        internal static string Title {
+        public static string Title {
             get {
                 return ResourceManager.GetString("Title", resourceCulture);
             }
@@ -243,7 +243,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to URL Friendly Name.
         /// </summary>
-        internal static string UrlFriendlyName {
+        public static string UrlFriendlyName {
             get {
                 return ResourceManager.GetString("UrlFriendlyName", resourceCulture);
             }
@@ -252,7 +252,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to URL Friendly Title.
         /// </summary>
-        internal static string UrlFriendlyTitle {
+        public static string UrlFriendlyTitle {
             get {
                 return ResourceManager.GetString("UrlFriendlyTitle", resourceCulture);
             }

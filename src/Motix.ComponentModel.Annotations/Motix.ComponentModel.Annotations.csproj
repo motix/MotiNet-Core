@@ -29,18 +29,18 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Resources\CommonDisplayNames.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CommonDisplayNames.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\CommonDisplayNames.vi.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator></Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\CommonValidationMessages.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CommonValidationMessages.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\CommonValidationMessages.vi.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator></Generator>
     </EmbeddedResource>
   </ItemGroup>
 

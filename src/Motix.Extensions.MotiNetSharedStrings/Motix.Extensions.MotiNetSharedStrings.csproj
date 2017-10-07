@@ -14,19 +14,4 @@
     <VersionPrefix>2.0.0</VersionPrefix>
   </PropertyGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Update="ButtonStrings.en.resx">
-      <Generator></Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="ButtonStrings.vi.resx">
-      <Generator></Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="CommonStrings.en.resx">
-      <Generator></Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="CommonStrings.vi.resx">
-      <Generator></Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-
 </Project>

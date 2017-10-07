@@ -26,20 +26,22 @@ if(Test-Path .\artifacts) { Remove-Item .\artifacts -Force -Recurse }
 
 exec { & dotnet restore }
 
-# exec { & dotnet test .\test\Motix.Extensions.MotiNetCore.Tests -c Release }
+# exec { & dotnet test .\test\Motix.Extensions.MotiNet.Core.Tests -c Release }
 
 if ($env:APPVEYOR_REPO_TAG -eq $true) {
-	exec { & dotnet pack .\src\Motix.Extensions.MotiNetCore -c Release -o ..\..\artifacts }
-	exec { & dotnet pack .\src\Motix.Extensions.MotiNetSharedStrings -c Release -o ..\..\artifacts }
+	exec { & dotnet pack .\src\Motix.MotiNet.Core -c Release -o ..\..\artifacts }
+	exec { & dotnet pack .\src\Motix.MotiNet.SharedStrings -c Release -o ..\..\artifacts }
 	exec { & dotnet pack .\src\Motix.ComponentModel.Annotations -c Release -o ..\..\artifacts }
-	exec { & dotnet pack .\src\Motix.Extensions.MessageSenders -c Release -o ..\..\artifacts }
+	exec { & dotnet pack .\src\Motix.Extensions.MotiNet.MessageSenders -c Release -o ..\..\artifacts }
+	exec { & dotnet pack .\src\Motix.MotiNet.MessageSenders -c Release -o ..\..\artifacts }
 } else {
 	$revision = @{ $true = $env:APPVEYOR_BUILD_NUMBER; $false = 1 }[$env:APPVEYOR_BUILD_NUMBER -ne $NULL];
 	$revision = "{0:D4}" -f [convert]::ToInt32($revision, 10);
 	$suffix = "beta-" + $revision
 
-	exec { & dotnet pack .\src\Motix.Extensions.MotiNetCore -c Release -o ..\..\artifacts --version-suffix=$suffix }
-	exec { & dotnet pack .\src\Motix.Extensions.MotiNetSharedStrings -c Release -o ..\..\artifacts --version-suffix=$suffix }
+	exec { & dotnet pack .\src\Motix.MotiNet.Core -c Release -o ..\..\artifacts --version-suffix=$suffix }
+	exec { & dotnet pack .\src\Motix.MotiNet.SharedStrings -c Release -o ..\..\artifacts --version-suffix=$suffix }
 	exec { & dotnet pack .\src\Motix.ComponentModel.Annotations -c Release -o ..\..\artifacts --version-suffix=$suffix }
-	exec { & dotnet pack .\src\Motix.Extensions.MessageSenders -c Release -o ..\..\artifacts --version-suffix=$suffix }
+	exec { & dotnet pack .\src\Motix.Extensions.MotiNet.MessageSenders -c Release -o ..\..\artifacts --version-suffix=$suffix }
+	exec { & dotnet pack .\src\Motix.MotiNet.MessageSenders -c Release -o ..\..\artifacts --version-suffix=$suffix }
 }

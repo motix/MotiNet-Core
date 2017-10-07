@@ -22,7 +22,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class CommonValidationMessages {
+    public class CommonValidationMessages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("System.ComponentModel.DataAnnotations.Resources.CommonValidationMessages", typeof(CommonValidationMessages).Assembly);
@@ -51,7 +51,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to {0} is not a valid email address..
         /// </summary>
-        internal static string EmailAddress {
+        public static string EmailAddress {
             get {
                 return ResourceManager.GetString("EmailAddress", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to {0} must have a maximum length of {1}..
         /// </summary>
-        internal static string MaxLength {
+        public static string MaxLength {
             get {
                 return ResourceManager.GetString("MaxLength", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to {0} must have a minimum length of {1}..
         /// </summary>
-        internal static string MinLength {
+        public static string MinLength {
             get {
                 return ResourceManager.GetString("MinLength", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace System.ComponentModel.DataAnnotations.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Please enter {0}..
         /// </summary>
-        internal static string Required {
+        public static string Required {
             get {
                 return ResourceManager.GetString("Required", resourceCulture);
             }
