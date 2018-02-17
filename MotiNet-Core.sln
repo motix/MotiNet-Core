@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7366100D-DA6B-43B8-B621-7C485050F01C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5266D39D-6D2F-4A61-B77B-69CF50D9E8AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Motix.ComponentModel.Annotations", "src\Motix.ComponentModel.Annotations\Motix.ComponentModel.Annotations.csproj", "{52458B5C-AB94-4343-A4FD-64156755AC3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Motix.ComponentModel.Annotations", "src\Motix.ComponentModel.Annotations\Motix.ComponentModel.Annotations.csproj", "{52458B5C-AB94-4343-A4FD-64156755AC3D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3A7B8DF4-E155-4854-BD99-E009F425B837}"
 	ProjectSection(SolutionItems) = preProject
@@ -16,13 +16,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Motix.MotiNet.Core", "src\Motix.MotiNet.Core\Motix.MotiNet.Core.csproj", "{5390A39C-DC71-4B07-9CC5-7D13E9783FD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Motix.MotiNet.Core", "src\Motix.MotiNet.Core\Motix.MotiNet.Core.csproj", "{5390A39C-DC71-4B07-9CC5-7D13E9783FD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Motix.MotiNet.MessageSenders", "src\Motix.MotiNet.MessageSenders\Motix.MotiNet.MessageSenders.csproj", "{DE4D0E05-9D63-4733-B661-D3EA60F9E1AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Motix.MotiNet.MessageSenders", "src\Motix.MotiNet.MessageSenders\Motix.MotiNet.MessageSenders.csproj", "{DE4D0E05-9D63-4733-B661-D3EA60F9E1AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Motix.Extensions.MotiNet.MessageSenders", "src\Motix.Extensions.MotiNet.MessageSenders\Motix.Extensions.MotiNet.MessageSenders.csproj", "{8CCACEC8-DC13-4859-AB6B-20972FBAEA0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Motix.Extensions.MotiNet.MessageSenders", "src\Motix.Extensions.MotiNet.MessageSenders\Motix.Extensions.MotiNet.MessageSenders.csproj", "{8CCACEC8-DC13-4859-AB6B-20972FBAEA0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Motix.MotiNet.SharedStrings", "src\Motix.MotiNet.SharedStrings\Motix.MotiNet.SharedStrings.csproj", "{C233F3A0-155F-43F9-B0D1-17E914193CBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Motix.MotiNet.SharedStrings", "src\Motix.MotiNet.SharedStrings\Motix.MotiNet.SharedStrings.csproj", "{C233F3A0-155F-43F9-B0D1-17E914193CBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

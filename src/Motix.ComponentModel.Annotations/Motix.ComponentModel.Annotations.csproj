@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>System.ComponentModel.DataAnnotations</RootNamespace>
     <Description>Motix.ComponentModel.Annotations class library</Description>
     <Authors>Minh Nguyen</Authors>
@@ -10,6 +10,10 @@
     <PackageLicenseUrl>https://github.com/motix/MotiNet-Core/blob/master/LICENSE</PackageLicenseUrl>
     <VersionPrefix>1.0.0</VersionPrefix>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.1" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Resources\CommonDisplayNames.Designer.cs">
