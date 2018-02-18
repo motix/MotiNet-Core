@@ -1,4 +1,4 @@
-﻿namespace MotiNet.SharedStrings
+﻿namespace MotiNet
 {
     public class ButtonStrings { }
 }
