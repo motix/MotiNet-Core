@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.IO;
 
-namespace Motix.Extensions.MessageSenders
+namespace MotiNet.Extensions.MessageSenders
 {
     public class MultilingualHtmlMessageTemplateResolver<TMarker> : MultilingualHtmlMessageTemplateResolver, IMessageTemplateResolver<TMarker> { }
 

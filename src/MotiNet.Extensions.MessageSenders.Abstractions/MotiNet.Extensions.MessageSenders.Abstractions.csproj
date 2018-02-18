@@ -5,11 +5,10 @@
     <VersionPrefix>1.0.0</VersionPrefix>
     <Authors>Minh Nguyen</Authors>
     <Company>Motix</Company>
-    <Description>Motix.MotiNet.SharedStrings class library</Description>
+    <Description>MotiNet.Extensions.MessageSenders.Abstractions class library</Description>
     <Copyright>Motix</Copyright>
     <PackageLicenseUrl>https://github.com/motix/MotiNet-Core/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/motix/MotiNet-Core</PackageProjectUrl>
-    <RootNamespace>MotiNet.SharedStrings</RootNamespace>
   </PropertyGroup>
 
 </Project>
