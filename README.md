@@ -14,10 +14,10 @@
 
 [![MyGet CI](https://img.shields.io/myget/motix-ci/v/Motix.ComponentModel.Annotations.svg)](https://www.myget.org/feed/motix-ci/package/nuget/Motix.ComponentModel.Annotations) [![NuGet](https://img.shields.io/nuget/v/Motix.ComponentModel.Annotations.svg)](https://www.nuget.org/packages/Motix.ComponentModel.Annotations)
 
-### Motix.Extensions.MotiNet.MessageSenders
+### Motix.Extensions.MessageSenders.Abstractions
 
-[![MyGet CI](https://img.shields.io/myget/motix-ci/v/Motix.Extensions.MotiNet.MessageSenders.svg)](https://www.myget.org/feed/motix-ci/package/nuget/Motix.Extensions.MotiNet.MessageSenders) [![NuGet](https://img.shields.io/nuget/v/Motix.Extensions.MotiNet.MessageSenders.svg)](https://www.nuget.org/packages/Motix.Extensions.MotiNet.MessageSenders)
+[![MyGet CI](https://img.shields.io/myget/motix-ci/v/Motix.Extensions.MessageSenders.Abstractions.svg)](https://www.myget.org/feed/motix-ci/package/nuget/Motix.Extensions.MessageSenders.Abstractions) [![NuGet](https://img.shields.io/nuget/v/Motix.Extensions.MessageSenders.Abstractions.svg)](https://www.nuget.org/packages/Motix.Extensions.MessageSenders.Abstractions)
 
-### Motix.MotiNet.MessageSenders
+### Motix.Extensions.MessageSenders
 
-[![MyGet CI](https://img.shields.io/myget/motix-ci/v/Motix.MotiNet.MessageSenders.svg)](https://www.myget.org/feed/motix-ci/package/nuget/Motix.MotiNet.MessageSenders) [![NuGet](https://img.shields.io/nuget/v/Motix.MotiNet.MessageSenders.svg)](https://www.nuget.org/packages/Motix.MotiNet.MessageSenders)
+[![MyGet CI](https://img.shields.io/myget/motix-ci/v/Motix.Extensions.MessageSenders.svg)](https://www.myget.org/feed/motix-ci/package/nuget/Motix.Extensions.MessageSenders) [![NuGet](https://img.shields.io/nuget/v/Motix.Extensions.MessageSenders.svg)](https://www.nuget.org/packages/Motix.Extensions.MessageSenders)
