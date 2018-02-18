@@ -1,4 +1,4 @@
-﻿namespace MotiNet.MessageSenders
+﻿namespace Motix.Extensions.MessageSenders
 {
     public interface IMessageTemplateResolver<out TMarker> : IMessageTemplateResolver { }
 

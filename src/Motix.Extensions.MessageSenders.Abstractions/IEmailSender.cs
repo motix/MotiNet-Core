@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace MotiNet.MessageSenders
+namespace Motix.Extensions.MessageSenders
 {
     public interface IEmailSender<out TMarker> : IEmailSender { }
 

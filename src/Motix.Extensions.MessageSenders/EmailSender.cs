@@ -7,7 +7,7 @@ using MimeKit;
 using System.Text.RegularExpressions;
 using MimeKit.Utils;
 
-namespace MotiNet.MessageSenders
+namespace Motix.Extensions.MessageSenders
 {
     public class EmailSender<TMarker> : EmailSender, IEmailSender<TMarker>
     {
@@ -63,7 +63,11 @@ namespace MotiNet.MessageSenders
             mailMessage.To.Add(new MailboxAddress(receiverName, receiverEmail));
             mailMessage.Subject = subject;
 
-            var inlineReplacements = new List<Tuple<string, string>>();
+            List<(string Alpha, string Beta)> l;
+            (string Alpha, string Beta) namedLetters = ("a", "b");
+            namedLetters.Alpha = "x";
+
+            var inlineReplacements = new List<(string OldValue, string NewValue)>();
             var builder = new BodyBuilder();
             Regex regex = new Regex(@"([""'])cid:(?:(?=(\\?))\2.)*?\1");
             var matches = regex.Matches(body);
@@ -72,12 +76,12 @@ namespace MotiNet.MessageSenders
                 var path = match.Value.Substring(5, match.Value.Length - 6);
                 var inline = builder.LinkedResources.Add(path);
                 inline.ContentId = MimeUtils.GenerateMessageId();
-                inlineReplacements.Add(new Tuple<string, string>(match.Value, $"\"cid:{inline.ContentId}\""));
+                inlineReplacements.Add((match.Value, $"\"cid:{inline.ContentId}\""));
             }
 
             foreach (var replacement in inlineReplacements)
             {
-                body = body.Replace(replacement.Item1, replacement.Item2);
+                body = body.Replace(replacement.OldValue, replacement.NewValue);
             }
 
             builder.HtmlBody = body;

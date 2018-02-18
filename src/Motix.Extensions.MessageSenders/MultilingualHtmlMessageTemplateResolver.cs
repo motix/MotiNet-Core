@@ -2,11 +2,11 @@
 using System.Globalization;
 using System.IO;
 
-namespace MotiNet.MessageSenders
+namespace Motix.Extensions.MessageSenders
 {
-    public class MessageTemplateResolver<TMarker> : MessageTemplateResolver, IMessageTemplateResolver<TMarker> { }
+    public class MultilingualHtmlMessageTemplateResolver<TMarker> : MultilingualHtmlMessageTemplateResolver, IMessageTemplateResolver<TMarker> { }
 
-    public class MessageTemplateResolver : IMessageTemplateResolver
+    public class MultilingualHtmlMessageTemplateResolver : IMessageTemplateResolver
     {
         protected string Language => CultureInfo.CurrentCulture.TwoLetterISOLanguageName;
 
