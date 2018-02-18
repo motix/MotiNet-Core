@@ -26,7 +26,7 @@ if(Test-Path .\artifacts) { Remove-Item .\artifacts -Force -Recurse }
 
 exec { & dotnet restore }
 
-# exec { & dotnet test .\test\Motix.Extensions.MotiNet.Core.Tests -c Release }
+# exec { & dotnet test .\test\Motix.MotiNet.Core.Tests -c Release }
 
 if ($env:APPVEYOR_REPO_TAG -eq $true) {
 	exec { & dotnet pack .\src\Motix.MotiNet.Core -c Release -o ..\..\artifacts }
