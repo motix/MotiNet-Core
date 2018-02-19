@@ -7,7 +7,7 @@ using MimeKit;
 using System.Text.RegularExpressions;
 using MimeKit.Utils;
 
-namespace MotiNet.Extensions.MessageSenders
+namespace MotiNet.MessageSenders
 {
     public class EmailSender<TMarker> : EmailSender, IEmailSender<TMarker>
     {

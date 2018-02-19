@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MotiNet.Extensions.MessageSenders {
+namespace MotiNet.MessageSenders {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace MotiNet.Extensions.MessageSenders {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MotiNet.Extensions.MessageSenders.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MotiNet.MessageSenders.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -9,6 +9,7 @@
     <Copyright>Motix</Copyright>
     <PackageLicenseUrl>https://github.com/motix/MotiNet-Core/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/motix/MotiNet-Core</PackageProjectUrl>
+    <RootNamespace>MotiNet.MessageSenders</RootNamespace>
   </PropertyGroup>
 
 </Project>

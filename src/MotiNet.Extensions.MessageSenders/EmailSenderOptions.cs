@@ -1,4 +1,4 @@
-﻿namespace MotiNet.Extensions.MessageSenders
+﻿namespace MotiNet.MessageSenders
 {
     public class EmailSenderOptions<TMarker> : EmailSenderOptions { }
 
