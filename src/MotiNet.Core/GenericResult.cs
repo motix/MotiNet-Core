@@ -24,6 +24,11 @@ namespace MotiNet
             return result;
         }
 
+        public static GenericResult GetResult(IEnumerable<GenericError> errors)
+        {
+            return errors.Count() > 0 ? Failed(errors.ToArray()) : Success;
+        }
+
         public override string ToString()
         {
             return Succeeded ?
