@@ -25,15 +25,14 @@ namespace MotiNet
         }
 
         public static GenericResult GetResult(IEnumerable<GenericError> errors)
-        {
-            return errors.Count() > 0 ? Failed(errors.ToArray()) : Success;
-        }
+            => errors.Count() > 0 ? Failed(errors.ToArray()) : Success;
+
+        public static GenericResult GetResult(IEnumerable<string> errorMessages)
+            => GetResult(errorMessages.Select(x => new GenericError(null, x)));
 
         public override string ToString()
-        {
-            return Succeeded ?
-                   "Succeeded" :
-                   $"Failed: {string.Join(", ", Errors.Select(x => x.Code).ToList())}";
-        }
+            => Succeeded ?
+               "Succeeded" :
+               $"Failed: {string.Join(", ", Errors.Select(x => x.Code).ToList())}";
     }
 }
