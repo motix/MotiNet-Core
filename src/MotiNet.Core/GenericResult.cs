@@ -5,14 +5,13 @@ namespace MotiNet
 {
     public class GenericResult
     {
-        private static readonly GenericResult _success = new GenericResult { Succeeded = true };
+        public static GenericResult Success { get; } = new GenericResult { Succeeded = true };
+
         private List<GenericError> _errors = new List<GenericError>();
 
         public bool Succeeded { get; protected set; }
 
         public IEnumerable<GenericError> Errors => _errors;
-
-        public static GenericResult Success => _success;
 
         public static GenericResult Failed(params GenericError[] errors)
         {
