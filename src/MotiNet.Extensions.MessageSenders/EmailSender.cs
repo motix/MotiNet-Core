@@ -63,10 +63,6 @@ namespace MotiNet.MessageSenders
             mailMessage.To.Add(new MailboxAddress(receiverName, receiverEmail));
             mailMessage.Subject = subject;
 
-            List<(string Alpha, string Beta)> l;
-            (string Alpha, string Beta) namedLetters = ("a", "b");
-            namedLetters.Alpha = "x";
-
             var inlineReplacements = new List<(string OldValue, string NewValue)>();
             var builder = new BodyBuilder();
             Regex regex = new Regex(@"([""'])cid:(?:(?=(\\?))\2.)*?\1");
@@ -79,9 +75,9 @@ namespace MotiNet.MessageSenders
                 inlineReplacements.Add((match.Value, $"\"cid:{inline.ContentId}\""));
             }
 
-            foreach (var replacement in inlineReplacements)
+            foreach (var (oldValue, newValue) in inlineReplacements)
             {
-                body = body.Replace(replacement.OldValue, replacement.NewValue);
+                body = body.Replace(oldValue, newValue);
             }
 
             builder.HtmlBody = body;
