@@ -27,6 +27,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet", "dotnet", "{7CB4F3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MotiNet.ComponentModel.Annotations", "src\dotnet\MotiNet.ComponentModel.Annotations\MotiNet.ComponentModel.Annotations.csproj", "{F8F23905-0BBD-4175-AD54-2FA146C10AE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotiNet.Extensions.AutoMapper", "src\MotiNet.Extensions.AutoMapper\MotiNet.Extensions.AutoMapper.csproj", "{2CD08DD2-732E-4FEB-BEB4-E02E49580BEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{F8F23905-0BBD-4175-AD54-2FA146C10AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8F23905-0BBD-4175-AD54-2FA146C10AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8F23905-0BBD-4175-AD54-2FA146C10AE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CD08DD2-732E-4FEB-BEB4-E02E49580BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD08DD2-732E-4FEB-BEB4-E02E49580BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD08DD2-732E-4FEB-BEB4-E02E49580BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD08DD2-732E-4FEB-BEB4-E02E49580BEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{E20C08B4-1DA9-4640-B437-31D05B97A91D} = {7366100D-DA6B-43B8-B621-7C485050F01C}
 		{7CB4F3B0-C2D3-4FE7-86EB-C07EF9D89D56} = {7366100D-DA6B-43B8-B621-7C485050F01C}
 		{F8F23905-0BBD-4175-AD54-2FA146C10AE8} = {7CB4F3B0-C2D3-4FE7-86EB-C07EF9D89D56}
+		{2CD08DD2-732E-4FEB-BEB4-E02E49580BEA} = {7366100D-DA6B-43B8-B621-7C485050F01C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E71E09B8-8176-4225-A373-EED3C7CE75FE}
