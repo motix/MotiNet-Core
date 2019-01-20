@@ -6,7 +6,6 @@ namespace MotiNet.Extensions.AutoMapper
     {
         public static IMappingExpression SwapMemberWithOrderedMember(
             this IMappingExpression mappingExpression,
-            IRuntimeMapper mapper,
             params string[] members)
         {
             foreach (var member in members)
@@ -14,7 +13,7 @@ namespace MotiNet.Extensions.AutoMapper
                 mappingExpression.ForMember(member, options => options.Ignore())
                                  .AfterMap((source, destination) =>
                                  {
-                                     SwapMember(source, destination, member, $"Ordered{member}", mapper);
+                                     SwapMember(source, destination, member, $"Ordered{member}", null);
                                  });
             }
 
@@ -43,7 +42,9 @@ namespace MotiNet.Extensions.AutoMapper
             IRuntimeMapper mapper)
         {
             var sourceValue = source.GetType().GetProperty(newMember).GetValue(source);
-            var destinationValue = mapper.Map(sourceValue, source.GetType().GetProperty(newMember).PropertyType, destination.GetType().GetProperty(originalMember).PropertyType);
+            var destinationValue =
+                mapper?.Map(sourceValue, source.GetType().GetProperty(newMember).PropertyType, destination.GetType().GetProperty(originalMember).PropertyType) ??
+                Mapper.Map(sourceValue, source.GetType().GetProperty(newMember).PropertyType, destination.GetType().GetProperty(originalMember).PropertyType);
             destination.GetType().GetProperty(originalMember).SetValue(destination, destinationValue);
         }
     }
