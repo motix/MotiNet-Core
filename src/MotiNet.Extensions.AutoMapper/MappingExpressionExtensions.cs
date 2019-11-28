@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace MotiNet.Extensions.AutoMapper
+namespace MotiNet.AutoMapper
 {
     public static class MappingExpressionExtensions
     {
