@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7366100D-DA6B-43B8-B621-7C485050F01C}"
 EndProject
@@ -27,7 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet", "dotnet", "{7CB4F3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MotiNet.ComponentModel.Annotations", "src\dotnet\MotiNet.ComponentModel.Annotations\MotiNet.ComponentModel.Annotations.csproj", "{F8F23905-0BBD-4175-AD54-2FA146C10AE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotiNet.Extensions.AutoMapper", "src\MotiNet.Extensions.AutoMapper\MotiNet.Extensions.AutoMapper.csproj", "{2CD08DD2-732E-4FEB-BEB4-E02E49580BEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MotiNet.Extensions.AutoMapper", "src\MotiNet.Extensions.AutoMapper\MotiNet.Extensions.AutoMapper.csproj", "{2CD08DD2-732E-4FEB-BEB4-E02E49580BEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
