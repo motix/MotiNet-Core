@@ -29,21 +29,21 @@ exec { & dotnet restore }
 # exec { & dotnet test .\test\MotiNet.Core.Tests -c Release }
 
 if ($env:APPVEYOR_REPO_TAG -eq $true) {
-	exec { & dotnet pack .\src\MotiNet.Core -c Release -o ..\..\artifacts }
-	exec { & dotnet pack .\src\MotiNet.SharedStrings -c Release -o ..\..\artifacts }
-	exec { & dotnet pack .\src\MotiNet.Extensions.AutoMapper -c Release -o ..\..\artifacts }
-	exec { & dotnet pack .\src\MotiNet.Extensions.MessageSenders.Abstractions -c Release -o ..\..\artifacts }
-	exec { & dotnet pack .\src\MotiNet.Extensions.MessageSenders -c Release -o ..\..\artifacts }
-	exec { & dotnet pack .\src\dotnet\MotiNet.ComponentModel.Annotations -c Release -o ..\..\..\artifacts }
+	exec { & dotnet pack .\src\MotiNet.Core -c Release -o .\artifacts }
+	exec { & dotnet pack .\src\MotiNet.SharedStrings -c Release -o .\artifacts }
+	exec { & dotnet pack .\src\MotiNet.Extensions.AutoMapper -c Release -o .\artifacts }
+	exec { & dotnet pack .\src\MotiNet.Extensions.MessageSenders.Abstractions -c Release -o .\artifacts }
+	exec { & dotnet pack .\src\MotiNet.Extensions.MessageSenders -c Release -o .\artifacts }
+	exec { & dotnet pack .\src\dotnet\MotiNet.ComponentModel.Annotations -c Release -o .\artifacts }
 } else {
 	$revision = @{ $true = $env:APPVEYOR_BUILD_NUMBER; $false = 1 }[$env:APPVEYOR_BUILD_NUMBER -ne $NULL];
 	$revision = "{0:D4}" -f [convert]::ToInt32($revision, 10);
 	$suffix = "beta-" + $revision
 
-	exec { & dotnet pack .\src\MotiNet.Core -c Release -o ..\..\artifacts --version-suffix=$suffix }
-	exec { & dotnet pack .\src\MotiNet.SharedStrings -c Release -o ..\..\artifacts --version-suffix=$suffix }
-	exec { & dotnet pack .\src\MotiNet.Extensions.AutoMapper -c Release -o ..\..\artifacts --version-suffix=$suffix }
-	exec { & dotnet pack .\src\MotiNet.Extensions.MessageSenders.Abstractions -c Release -o ..\..\artifacts --version-suffix=$suffix }
-	exec { & dotnet pack .\src\MotiNet.Extensions.MessageSenders -c Release -o ..\..\artifacts --version-suffix=$suffix }
-	exec { & dotnet pack .\src\dotnet\MotiNet.ComponentModel.Annotations -c Release -o ..\..\..\artifacts --version-suffix=$suffix }
+	exec { & dotnet pack .\src\MotiNet.Core -c Release -o .\artifacts --version-suffix=$suffix }
+	exec { & dotnet pack .\src\MotiNet.SharedStrings -c Release -o .\artifacts --version-suffix=$suffix }
+	exec { & dotnet pack .\src\MotiNet.Extensions.AutoMapper -c Release -o .\artifacts --version-suffix=$suffix }
+	exec { & dotnet pack .\src\MotiNet.Extensions.MessageSenders.Abstractions -c Release -o .\artifacts --version-suffix=$suffix }
+	exec { & dotnet pack .\src\MotiNet.Extensions.MessageSenders -c Release -o .\artifacts --version-suffix=$suffix }
+	exec { & dotnet pack .\src\dotnet\MotiNet.ComponentModel.Annotations -c Release -o .\artifacts --version-suffix=$suffix }
 }
