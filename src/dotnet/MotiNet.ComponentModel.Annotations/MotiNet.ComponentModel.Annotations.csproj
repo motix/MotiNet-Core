@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -7,7 +7,7 @@
     <Company>Motix</Company>
     <Description>MotiNet.ComponentModel.Annotations class library</Description>
     <Copyright>Motix</Copyright>
-    <PackageLicenseUrl>https://github.com/motix/MotiNet-Core/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicense>https://github.com/motix/MotiNet-Core/blob/master/LICENSE</PackageLicense>
     <PackageProjectUrl>https://github.com/motix/MotiNet-Core</PackageProjectUrl>
     <RootNamespace>System.ComponentModel.DataAnnotations</RootNamespace>
   </PropertyGroup>

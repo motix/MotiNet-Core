@@ -7,7 +7,7 @@
     <Company>Motix</Company>
     <Description>MotiNet.Core class library</Description>
     <Copyright>Motix</Copyright>
-    <PackageLicenseUrl>https://github.com/motix/MotiNet-Core/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicense>https://github.com/motix/MotiNet-Core/blob/master/LICENSE</PackageLicense>
     <PackageProjectUrl>https://github.com/motix/MotiNet-Core</PackageProjectUrl>
     <RootNamespace>MotiNet</RootNamespace>
   </PropertyGroup>
