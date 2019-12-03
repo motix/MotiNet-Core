@@ -30,7 +30,6 @@ exec { & dotnet restore }
 
 if ($env:APPVEYOR_REPO_TAG -eq $true) {
 	exec { & dotnet pack .\src\MotiNet.Core -c Release -o .\artifacts }
-	exec { & dotnet pack .\src\MotiNet.SharedStrings -c Release -o .\artifacts }
 	exec { & dotnet pack .\src\MotiNet.Extensions.AutoMapper -c Release -o .\artifacts }
 	exec { & dotnet pack .\src\MotiNet.Extensions.MessageSenders.Abstractions -c Release -o .\artifacts }
 	exec { & dotnet pack .\src\MotiNet.Extensions.MessageSenders -c Release -o .\artifacts }
@@ -41,7 +40,6 @@ if ($env:APPVEYOR_REPO_TAG -eq $true) {
 	$suffix = "beta-" + $revision
 
 	exec { & dotnet pack .\src\MotiNet.Core -c Release -o .\artifacts --version-suffix=$suffix }
-	exec { & dotnet pack .\src\MotiNet.SharedStrings -c Release -o .\artifacts --version-suffix=$suffix }
 	exec { & dotnet pack .\src\MotiNet.Extensions.AutoMapper -c Release -o .\artifacts --version-suffix=$suffix }
 	exec { & dotnet pack .\src\MotiNet.Extensions.MessageSenders.Abstractions -c Release -o .\artifacts --version-suffix=$suffix }
 	exec { & dotnet pack .\src\MotiNet.Extensions.MessageSenders -c Release -o .\artifacts --version-suffix=$suffix }

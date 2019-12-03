@@ -6,10 +6,6 @@
 
 [![MyGet CI](https://img.shields.io/myget/motix-ci/v/MotiNet.Core.svg)](https://www.myget.org/feed/motix-ci/package/nuget/MotiNet.Core) [![NuGet](https://img.shields.io/nuget/v/MotiNet.Core.svg)](https://www.nuget.org/packages/MotiNet.Core)
 
-### MotiNet.SharedStrings
-
-[![MyGet CI](https://img.shields.io/myget/motix-ci/v/MotiNet.SharedStrings.svg)](https://www.myget.org/feed/motix-ci/package/nuget/MotiNet.SharedStrings) [![NuGet](https://img.shields.io/nuget/v/MotiNet.SharedStrings.svg)](https://www.nuget.org/packages/MotiNet.SharedStrings)
-
 ### MotiNet.Extensions.MessageSenders.Abstractions
 
 [![MyGet CI](https://img.shields.io/myget/motix-ci/v/MotiNet.Extensions.MessageSenders.Abstractions.svg)](https://www.myget.org/feed/motix-ci/package/nuget/MotiNet.Extensions.MessageSenders.Abstractions) [![NuGet](https://img.shields.io/nuget/v/MotiNet.Extensions.MessageSenders.Abstractions.svg)](https://www.nuget.org/packages/MotiNet.Extensions.MessageSenders.Abstractions)
