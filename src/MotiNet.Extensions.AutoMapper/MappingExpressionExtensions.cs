@@ -4,9 +4,7 @@ namespace MotiNet.AutoMapper
 {
     public static class MappingExpressionExtensions
     {
-        public static IMappingExpression<TSource, TDestination> SwapMemberWithOrderedMember<TSource, TDestination>(
-            this IMappingExpression<TSource, TDestination> mappingExpression,
-            params string[] members)
+        public static IMappingExpression SwapMemberWithOrderedMember(this IMappingExpression mappingExpression, params string[] members)
         {
             foreach (var member in members)
             {
