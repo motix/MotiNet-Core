@@ -8,14 +8,7 @@ namespace MotiNet.AutoMapper
         {
             foreach (var member in members)
             {
-                mappingExpression.ForMember(member, options => options.Ignore())
-                                 .AfterMap((source, destination, context) =>
-                                 {
-                                     var newMember = $"Ordered{member}";
-                                     var sourceValue = source.GetType().GetProperty(newMember).GetValue(source);
-                                     var destinationValue = context.Mapper.Map(sourceValue, source.GetType().GetProperty(newMember).PropertyType, destination.GetType().GetProperty(member).PropertyType);
-                                     destination.GetType().GetProperty(member).SetValue(destination, destinationValue);
-                                 });
+                mappingExpression.ForMember(member, options => options.MapFrom($"Ordered{member}"));
             }
 
             return mappingExpression;
